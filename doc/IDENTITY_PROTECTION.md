@@ -8,12 +8,12 @@ Here is how Sail’s **JWT RSA (Anonymity Mode)** fundamentally redefines online
 
 ## ⚖️ The Structural Difference
 
-| Feature               | Standard Commercial VPN                                                               | Sail (JWT RSA Anonymity Mode)                                                                      |
-| :-------------------- | :------------------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
-| **Account Creation**  | ❌ **Required.** You must provide an email, username, and password [1.2, 1.3].        | **None.** Bypasses registration entirely. No identity is linked to the token.                      |
-| **Payment Footprint** | ❌ **Traceable.** Linked to credit cards, PayPal, or localized app stores.            | **Decoupled.** Vouchers are acquired via third parties or crypto exchanges.                        |
-| **Authentication**    | ❌ **Central Database.** Server queries a centralized user table to check access.     | **Stateless Cryptography.** Server verifies access in RAM using asymmetric public keys.            |
-| **Legal Resilience**  | ❌ **Vulnerable.** Subpoenas can force the disclosure of account ownership databases. | **Absolute.** Subpoenas yield only nameless data footprints; no identity data exists to turn over. |
+| Feature              | Standard VPN               | Sail (JWT RSA Mode)            |
+| :------------------- | :------------------------- | :----------------------------- |
+| **Account Creation** | ❌ Email/password required | ✅ None needed                 |
+| **Payment**          | ❌ Card/PayPal traceable   | ✅ 3rd party                   |
+| **Authentication**   | ❌ Central database        | ✅ Stateless cryptography      |
+| **Legal Resilience** | ❌ Vulnerable to subpoena  | ✅ No data exists to turn over |
 
 ---
 
