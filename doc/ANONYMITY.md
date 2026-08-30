@@ -30,11 +30,37 @@ These granular logs serve as immutable **accounting proofs**. Because Sail opera
 
 To reassure you that your personal information is fundamentally absent from our architecture, here is an exact representation of an accounting proof ledger table inside the Sail database. Notice the complete exclusion of names, emails, hardware metrics, or incoming home IP addresses:
 
-| Billing ID            | Start (UTC)         | Stop (UTC)          | Bytes In (Inbound)         | Bytes Out (Outbound)       | Bytes Total |
-| :-------------------- | :------------------ | :------------------ | :------------------------- | :------------------------- | :---------- |
-| `tmp_rsa_8f391a2c91b` | 2026-07-19 14:02:11 | 2026-07-19 14:35:49 | `2,415,919,104` (~2.25 GB) | `52,428,800` (~50 MB)      |
-| `tmp_rsa_8f391a2c91b` | 2026-07-19 16:11:02 | 2026-07-19 17:01:23 | `1,073,741,824` (~1.00 GB) | `1,073,741,824` (~1.00 GB) |
-| `tmp_rsa_a110e5f283c` | 2026-07-19 16:45:30 | 2026-07-19 16:48:12 | `52,428,800` (~50 MB)      | `2,415,919,104` (~2.25 GB) |
+```text
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+billingId: tmp_rsa_8f391a2c91b
+Start Time:     2026-07-19 14:02:11 (UTC)
+Stop Time:      2026-07-19 14:35:49 (UTC)
+Inbound:        2,415,919,104 bytes (~2.25 GB)
+Outbound:         52,428,800 bytes (~50 MB)
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+billingId: tmp_rsa_8f391a2c91b
+Start Time:     2026-07-19 16:11:02 (UTC)
+Stop Time:      2026-07-19 17:01:23 (UTC)
+Inbound:        1,073,741,824 bytes (~1.00 GB)
+Outbound:       1,073,741,824 bytes (~1.00 GB)
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+billingId: tmp_rsa_a110e5f283c
+Start Time:     2026-07-19 16:45:30 (UTC)
+Stop Time:      2026-07-19 16:48:12 (UTC)
+Inbound:           52,428,800 bytes (~50 MB)
+Outbound:       2,415,919,104 bytes (~2.25 GB)
+
+═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
+
+⚠️  NOTICE: NO PERSONAL DATA IN ANY FIELD
+  • Billing IDs are temporary, random, one-time identifiers only
+  • No names, emails, or phone numbers appear anywhere
+  • No home IP addresses or device identifiers
+  • Only session duration and byte counts—nothing to link to identity
+```
 
 ---
 
