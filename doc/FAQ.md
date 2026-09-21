@@ -43,7 +43,7 @@ Android blocks installations from outside the Google Play Store by default. You 
 Open your device Settings.
 Go to Apps &gt; Special app access (sometimes under Advanced or Privacy).
 Tap Install unknown apps.
-Select the app you are using (e.g., Chrome or My Files) and toggle Allow from this source to ON. [3]
+Select the app you are using (e.g., Chrome or My Files) and toggle Allow from this source to ON.
 
 #### Check for App Version or Signature Mismatches
 
@@ -57,7 +57,7 @@ Google Play Protect will occasionally block unverified APK files for security.
 Open the Google Play Store.
 Tap your profile icon in the top-right corner.
 Select Play Protect and then tap the Settings (gear) icon.
-Turn off Scan apps with Play Protect. Remember to turn this back on after installing the app. [2, 3, 7]
+Turn off Scan apps with Play Protect. Remember to turn this back on after installing the app.
 
 #### Clear the Package Installer Cache
 
@@ -65,10 +65,10 @@ The system application responsible for installing apps may have glitched.
 Go to Settings &gt; Apps &gt; See all apps.
 Tap the three dots (menu icon) in the top right and select Show system.
 Search for Package Installer, tap it, and go to Storage & cache.
-Tap Clear Cache. [9, 10]
+Tap Clear Cache.
 
 #### Check File Integrity and Compatibility
 
 Free up space: Android generally requires at least 10–15% of your internal storage to be free to successfully unpack and install a new application.
 Corrupted download: The APK file might be incomplete. Try downloading it again over a stable Wi-Fi connection, preferably from a reputable source like APKMirror .
-Incompatible hardware: The APK might be built for a different processor architecture (e.g., a 64-bit app trying to install on an older 32-bit phone) or requires a newer version of Android than your device has. [2, 5]
+Incompatible hardware: The APK might be built for a different processor architecture (e.g., a 64-bit app trying to install on an older 32-bit phone) or requires a newer version of Android than your device has.
