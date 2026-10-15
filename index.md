@@ -1,6 +1,6 @@
 # ⛵ Sail Proxy Service: User Manual
 
-Welcome to **Sail**, a privacy-focused internet access tool designed to bypass restrictions. It utilizes the custom **Troad** protocol for high-volume, private connectivity, which is incompatible with standard Trojan proxies.
+Welcome to **Sail**, a privacy-focused internet access tool designed to bypass restrictions. It utilizes the custom **Troad** protocol for high-volume, private connectivity.
 
 ---
 
