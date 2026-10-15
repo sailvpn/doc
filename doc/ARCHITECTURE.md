@@ -31,7 +31,7 @@ The client app acts as a secure local gateway on your computer or phone. It inte
 
 Depending on your operating system, the client integrates directly at the system level to capture traffic seamlessly:
 
-- **🤖 On Android:** The app creates a native **VPN Interface** at the Android OS level. Once activated, the Android operating system automatically routes all outbound traffic from your web browsers, crypto wallets, and apps directly through the Sail client.
+- **🤖 On Android:** The app creates a native **Tunnel** at the Android OS level. Once activated, the Android operating system automatically routes all outbound traffic from your web browsers, crypto wallets, and apps directly through the Sail client.
 - **💻 On Desktop (Windows, Mac, Linux):** The client provides two flexible integration points at the operating system level:
   - A **SOCKS5 Proxy Interface** for handling raw, high-speed layer 3 traffic (TCP, UDP Relay).
   - An **HTTP/HTTPS Proxy Interface** for seamless, universal compatibility with standard desktop web browsers and internet applications.
