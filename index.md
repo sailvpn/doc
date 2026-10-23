@@ -21,4 +21,4 @@ Welcome to **Sail**, a privacy-focused internet access tool designed to bypass r
 
 ## 🚀 Quick Setup
 
-- **[How to Connect Your Devices](./doc/CONNECTING.md)**
+- **[Desktop Setup Guide](./doc/DESKTOP_SETUP.md)**
