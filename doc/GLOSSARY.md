@@ -1,16 +1,16 @@
 # 📖 Glossary of Terms
 
-A quick reference guide defining the core components and concepts used across the Sail Proxy Service documentation.
+A quick reference guide defining the core components and concepts used across the SailX Proxy Service documentation.
 
 ---
 
-### ⛵ Sail
+### ⛵ SailX
 
 The official brand name of this privacy proxy service network.
 
 ### 🚗 Troad Protocol
 
-Sail's proprietary, standalone connection standard. It is a highly optimized alteration of older proxy styles that completely replaces static passwords with dynamic security tokens inside the data headers to achieve commercial scalability and advanced anti-tracking. It is entirely incompatible with standard Trojan proxies.
+SailX's proprietary, standalone connection standard. It is a highly optimized alteration of older proxy styles that completely replaces static passwords with dynamic security tokens inside the data headers to achieve commercial scalability and advanced anti-tracking.
 
 ### 📜 JWT RSA Token (Anonymity Mode)
 
