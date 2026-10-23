@@ -4,7 +4,66 @@ This guide provides step-by-step instructions to configure, run, and automate th
 
 ---
 
-## ⚙️ Step 1: Initialize Configuration File
+## ☕ Step 1: Verify Java JVM Availability
+
+Before initiating any configuration or deployment scripts, you must verify that the Java Virtual Machine (JVM) is correctly installed on your machine and accessible system-wide via your command-line interface.
+
+### Verification Commands
+
+Open your platform-specific terminal (Command Prompt/PowerShell on Windows, or Terminal on Linux/macOS) and execute the following command:
+
+```bash
+java -version
+```
+
+#### Expected Output
+
+If a JVM is available, the system will return the runtime version details. Ensure your version is **Java 8 (1.8) or higher** (higher versions are recommended for optimal performance):
+
+```text
+openjdk version "17.0.8" 2023-07-18
+OpenJDK Runtime Environment (build 17.0.8+7-Debian-1deb11u1)
+OpenJDK 64-Bit Server VM (build 17.0.8+7-Debian-1deb11u1, mixed mode, sharing)
+```
+
+### Troubleshooting Unrecognized Commands
+
+#### On Windows
+
+If you receive the error message `'java' is not recognized as an internal or external command`, the runtime binary path is missing from your system variables:
+
+1. Ensure Java is installed (look for it in `C:\Program Files\Java\`).
+2. Press `Win + R`, type `sysdm.cpl`, hit **Enter**, and select the **Advanced** tab.
+3. Click **Environment Variables**, find the **Path** variable under _System variables_, and click **Edit**.
+4. Click **New** and paste the absolute path to your Java `bin` directory (e.g., `C:\Program Files\Java\jdk-17\bin`).
+5. Re-open your command window and verify with `java -version` again.
+6. **Note:** Windows background deployment via `sail.bat` also strictly requires `javaw.exe` to be present in this directory to handle windowless background processing.
+
+#### On Linux / macOS
+
+If `java` cannot be found, update your local software index and install the headless OpenJDK runtime package environment:
+
+- **Ubuntu/Debian:** `sudo apt update && sudo apt install default-jre-headless`
+- **RHEL/CentOS/Fedora:** `sudo dnf install java-latest-openjdk-headless`
+- **macOS (via Homebrew):** `brew install openjdk`
+
+---
+
+## 📦 Step 2: Download and Extract the Software Package
+
+Before configuring the application, you must extract the contents of the downloaded archive file and enter its root workspace folder.
+
+1. **Unzip the Archive:** Locate your downloaded SailX software ZIP package and extract its contents to a preferred installation folder on your local storage.
+2. **Open Your Terminal:** Launch your platform's terminal application (Command Prompt/PowerShell for Windows, Terminal for Linux/macOS).
+3. **Navigate to the Directory:** Use the change directory (`cd`) command to enter your newly extracted installation folder.
+   ```bash
+   cd /path/to/extracted/sailx-directory
+   ```
+4. **Context Rule:** From this point forward, the relative path syntax `./` strictly refers to this extracted application root folder directory.
+
+---
+
+## ⚙️ Step 3: Initialize Configuration File
 
 The application requires an active configuration file named exactly `application.properties` located in the same directory as `app.jar`.
 
@@ -32,7 +91,7 @@ params.jwtTokenFile=./token.jwt         # File where your active token string is
 
 ---
 
-## 🔑 Step 2: Choose and Configure Your Operational Mode
+## 🔑 Step 4: Choose and Configure Your Operational Mode
 
 Inside your `application.properties`, uncomment and populate **only one** of the three following mode blocks based on your privacy and device usage goals:
 
@@ -171,23 +230,3 @@ To ensure the proxy backend initializes silently in the background at system sta
 4. **Actions Tab Configuration:**
    - Click _New..._, choose **Start a program**.
    - Target your script destination inside the _Program/script_ file explorer picker: `C:\path\to\your\folder\sail.bat`
-   - Supply the operational runtime parameter string inside the _Add arguments (optional)_ field: `start`
-   - ⚠️ **CRITICAL:** Paste the exact absolute structural directory path to the folder into the _Start in (optional)_ field: `C:\path\to\your\folder\`
-5. **Conditions Tab Configuration:**
-   - Uncheck the option stating _Start the task only if the computer is on AC power_.
-6. Complete setup by pressing **OK** and authorizing execution with your Windows account credentials.
-
----
-
-## 🪵 Real-time Log Architecture
-
-Standard tracking streams (`stdout` and `stderr`) are captured continuously inside the local `app.log` file.
-
-- **Live Stream Logs on Linux / macOS Terminal:**
-  ```bash
-  tail -f app.log
-  ```
-- **Live Stream Logs on Windows PowerShell Terminal:**
-  ```powershell
-  Get-Content app.log -Wait
-  ```
