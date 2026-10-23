@@ -14,12 +14,15 @@ SailX can be configured to operate in two distinct modes: **Anonymous Mode** and
 
 ### Mode Configuration Matrix
 
+```
 | Feature / Parameter         | Anonymous Mode                   | Registered Mode                |
 | :-------------------------- | :------------------------------- | :----------------------------- |
 | **Desktop Parameter**       | `params.crypto=JWT2`             | `params.crypto=JWT`            |
 | **Android App Auth Method** | `JWT2`                           | `JWT`                          |
 | **Token Type**              | JWT RSA (Self-contained voucher) | JWT SHA256 (Linked to account) |
 | **Account Required**        | No                               | Yes                            |
+
+```
 
 ---
 

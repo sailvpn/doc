@@ -77,7 +77,7 @@ The application requires an active configuration file named exactly `application
 # Remote Server Connection
 params.remoteHost=your-server.com
 params.remotePort=443
-params.sni=your-server.com
+params.sni=your-server.com             # just set it the same as remoteHost
 
 # Local Concurrent Proxy Listeners
 params.localHost=127.0.0.1
