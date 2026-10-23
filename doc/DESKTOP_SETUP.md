@@ -51,7 +51,7 @@ If `java` cannot be found, update your local software index and install the head
 
 ## 📦 Step 2: Download and Extract the Software Package
 
-Before configuring the application, you must extract the contents of the downloaded archive file and enter its root workspace folder.
+Extract the contents of the downloaded archive file and enter its root workspace folder.
 
 1. **Unzip the Archive:** Locate your downloaded SailX software ZIP package and extract its contents to a preferred installation folder on your local storage.
 2. **Open Your Terminal:** Launch your platform's terminal application (Command Prompt/PowerShell for Windows, Terminal for Linux/macOS).
