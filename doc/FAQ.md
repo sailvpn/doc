@@ -32,20 +32,20 @@ In Anonymous Mode, you do not need to create an account. Instead, you purchase a
 
 #### Purchase & Setup Process
 
-1. **Select a Package:** Visit [SailX Offers](https://sailsecuretech.com/offer) to view available packages and pricing.
+1. **Select a Package:** Visit [SailX Offers](https://app.sailsecuretech.com/offer) to view available packages and pricing.
 2. **Payment:** Click **Buy Anonymous Pass** to be redirected to the secure Stripe checkout page to enter your card or wallet information.
-3. **Token Retrieval:** After a successful payment, you will be redirected to [SailX Stripe Confirmation](https://sailsecuretech.com/stripe), where your unique JWT RSA token will be generated.
+3. **Token Retrieval:** After a successful payment, you will be redirected to [SailX Stripe Confirmation](https://app.sailsecuretech.com/stripe), where your unique JWT RSA token will be generated.
 
 > ⚠️ **CRITICAL WARNING:** The token is generated and displayed **ONLY ONCE**. If you do not save or copy it immediately, it is lost forever. The system does not store your tokens.
 
-4. **Installation:** Download the client software package from [SailX Downloads](https://sailsecuretech.com/download). Unzip or install the package.
-5. **Configuration:** Configure the client using your saved token and the VPN proxy node details found at [SailX Nodes](https://sailsecuretech.com/nodes).
+4. **Installation:** Download the client software package from [SailX Downloads](https://app.sailsecuretech.com/download). Unzip or install the package.
+5. **Configuration:** Configure the client using your saved token and the VPN proxy node details found at [SailX Nodes](https://app.sailsecuretech.com/nodes).
 
-_For detailed instructions, refer to the `README` file inside the downloaded package, visit [SailX Documentation](https://sailsecuretech.com/docs), or contact support at [SailX Support](https://sailsecuretech.com/support)._
+_For detailed instructions, refer to the `README` file inside the downloaded package, visit [SailX Documentation](https://app.sailsecuretech.com/docs), or contact support at [SailX Support](https://app.sailsecuretech.com/support)._
 
 #### Checking Balance
 
-You can verify your token's remaining data balance at any time by entering or uploading your token at [SailX Token Checker](https://sailsecuretech.comcheck-token) and clicking **Check**.
+You can verify your token's remaining data balance at any time by entering or uploading your token at [SailX Token Checker](https://app.sailsecuretech.comcheck-token) and clicking **Check**.
 
 ---
 
@@ -55,14 +55,14 @@ In Registered Mode, you create and log into an account with the VPN service. Pur
 
 #### Purchase & Setup Process
 
-1. **Refill Balance:** Go to [SailX Refill](https://sailsecuretech.com/refill) to view available packages and prices.
+1. **Refill Balance:** Go to [SailX Refill](https://app.sailsecuretech.com/refill) to view available packages and prices.
 2. **Payment:** Click **Add to Profile Balance** for your chosen package to proceed to Stripe checkout.
-3. **Confirmation:** Once payment is complete, you will be redirected back to [SailX Stripe Confirmation](https://sailsecuretech.com/stripe). The platform automatically detects your registered status, displays a success message, and adds the data quota to your account profile.
-4. **Token Generation:** Visit [SailX Token Generation](https://sailsecuretech.com/token) to generate your custom JWT SHA256 token. You can also generate a token by your username/password in your Android apps, and sahe it with your other devices
-5. **Installation:** Download the client software package from [SailX Downloads](https://sailsecuretech.com/download). Unzip or install the package.
-6. **Configuration:** Configure the client using your saved token and the VPN proxy node details found at [SailX Nodes](https://sailsecuretech.com/nodes).
+3. **Confirmation:** Once payment is complete, you will be redirected back to [SailX Stripe Confirmation](https://app.sailsecuretech.com/stripe). The platform automatically detects your registered status, displays a success message, and adds the data quota to your account profile.
+4. **Token Generation:** Visit [SailX Token Generation](https://app.sailsecuretech.com/token) to generate your custom JWT SHA256 token. You can also generate a token by your username/password in your Android apps, and sahe it with your other devices
+5. **Installation:** Download the client software package from [SailX Downloads](https://app.sailsecuretech.com/download). Unzip or install the package.
+6. **Configuration:** Configure the client using your saved token and the VPN proxy node details found at [SailX Nodes](https://app.sailsecuretech.com/nodes).
 
-_For detailed instructions, refer to the `README` file inside the downloaded package, visit [SailX Documentation](https://sailsecuretech.com/docs), or contact support at [SailX Support](https://sailsecuretech.com/support)._
+_For detailed instructions, refer to the `README` file inside the downloaded package, visit [SailX Documentation](https://app.sailsecuretech.com/docs), or contact support at [SailX Support](https://app.sailsecuretech.com/support)._
 
 ---
 
