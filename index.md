@@ -1,6 +1,6 @@
-# ⛵ Sail Proxy Service: User Manual
+# ⛵ SailX Proxy Service: User Manual
 
-Welcome to **Sail**, a privacy-focused internet access tool designed to bypass restrictions. It utilizes the custom **Troad** protocol for high-volume, private connectivity.
+Welcome to **SailX**, a privacy-focused internet access tool designed to bypass restrictions. It utilizes the custom **Troad** protocol for high-volume, private connectivity.
 
 ---
 
