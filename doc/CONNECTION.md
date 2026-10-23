@@ -1,6 +1,6 @@
 # 🔑 Available Connection Methods
 
-To accommodate different types of users while maintaining excellent performance across thousands of concurrent connections, Sail natively supports two streamlined connection token formats:
+To accommodate different types of users while maintaining excellent performance across thousands of concurrent connections, SailX natively supports two streamlined connection token formats:
 
 ## 🛡️ Method 1: JWT RSA (100% Absolute Anonymity Mode) — _Utmost Privacy_
 
@@ -24,7 +24,7 @@ To accommodate different types of users while maintaining excellent performance 
 ## 🔑 Method 2: JWT SHA256 (Account-Managed Mode)
 
 - **Best For:** Traditional account-based setup, user want to manage their profile via a web dashboard, or need to easily sync access across multiple devices.
-- **How it Works:** You log into the **Sail Gateway Web Portal** to generate this token. The proxy server decodes it instantly using a secure shared key, keeping your connection fast even during peak internet hours.
+- **How it Works:** You log into the **SailX Gateway Web Portal** to generate this token. The proxy server decodes it instantly using a secure shared key, keeping your connection fast even during peak internet hours.
 
 ### 🟢 Pros
 
