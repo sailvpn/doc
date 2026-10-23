@@ -18,7 +18,7 @@ java -version
 
 #### Expected Output
 
-If a JVM is available, the system will return the runtime version details. Ensure your version is **Java 8 (1.8) or higher** (higher versions are recommended for optimal performance):
+If a JVM is available, the system will return the runtime version details. Ensure your version is **Java 17 or higher** :
 
 ```text
 openjdk version "17.0.8" 2023-07-18
