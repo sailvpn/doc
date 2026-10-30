@@ -72,6 +72,8 @@ SailX runs **simultaneous proxy listeners** for both **HTTP/HTTPS** and **SOCKS5
 
 > 📌 **FTP Note:** FTP workloads are fully supported and handled natively by the SOCKS5 protocol via its built-in **UDP Relay** feature.
 
+> 📌 **default proxy settings:** **ipaddress:** 127.0.0.1, **SOCKS5 port:** 1080, **HTTP/HTTPS port:** 8080
+
 ### Windows Configuration
 
 #### Via Graphical Settings (For HTTP/HTTPS Apps)
